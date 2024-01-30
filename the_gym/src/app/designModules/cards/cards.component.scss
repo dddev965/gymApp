@@ -1,0 +1,23 @@
+// h5{
+//     text-shadow: 0 0 3px #000000, 0 0 5px white; 
+// }
+// .card-text{
+//     text-shadow: 0 0 3px white, 0 0 5px black; 
+// }
+.img-div{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    img{
+        height: 100px;
+        
+        
+    }
+}
+.excercise-div{
+    max-height: 110px;
+    overflow: hidden;
+}
