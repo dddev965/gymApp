@@ -13,6 +13,7 @@ export class GymExcerciseComponent {
   data:Exercise[]=[]
 constructor(private http:DataServiceService){
  this.getdata()
+//  this.getdata()
 }
 
 getdata(){
@@ -20,6 +21,9 @@ getdata(){
     console.log(res);
     this.data= res
   })
+ 
 }
+
+
 
 }

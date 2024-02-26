@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="row d-flex  justify-content-center">
     <div class=" col-lg-8 col-md-4">
-      <div class="container-fluid border box-div">
+      <div class="container-fluid border box-div m-3 shadow" *ngFor="let item of excerciseData?.Excercise " >
         <div class="row">
           <div class=" col-md-4 ">
             <div class="img-div m-2 border">
@@ -10,50 +10,22 @@
           </div>
           <div class="col-8 ">
             <div class="name-div border m-2">
-              <p class="fs-5">Incline-dumbbell-bench-press</p>
-              <span>{{data}}/3 done </span>
+              <p class="fs-5"> {{item.excerciseName}} </p>
+              <span>{{data}}/ {{item.sets}} done </span>
             </div>
           </div>
         </div>
-        <div class="row my-1 sets  border-bottom text-center p-1">
+        <div class="row my-1 sets  border-bottom text-center p-1" *ngFor="let reps of item.reps;let i=index">
           <div class="col"><input (change)="onCheckboxChange($event)" type="checkbox" name="" id=""></div>
-          <div class="col">1</div>
+          <div class="col"> {{i}} </div>
           <div class="col  border rounded"> 30</div>
           <div class="col ">kg</div>
           <div class="col  border rounded"> 12</div>
           <div class="col">Reps</div>
         </div>
-
-        <div class="row my-1 sets  border-bottom text-center p-1">
-          <div class="col"><input (change)="onCheckboxChange($event)" type="checkbox" name="" id=""></div>
-          <div class="col">1</div>
-          <div class="col  border rounded"> 30</div>
-          <div class="col ">kg</div>
-          <div class="col  border rounded"> 12</div>
-          <div class="col">Reps</div>
-        </div>
-
-        <div class="row my-1 sets  border-bottom text-center p-1">
-          <div class="col"><input (change)="onCheckboxChange($event)" type="checkbox" name="" id=""></div>
-          <div class="col">1</div>
-          <div class="col  border rounded"> 30</div>
-          <div class="col ">kg</div>
-          <div class="col  border rounded"> 12</div>
-          <div class="col">Reps</div>
-        </div>
-        <div class="row my-1 sets  border-bottom text-center p-1">
-          <div class="col"><input (change)="onCheckboxChange($event)" type="checkbox" name="" id=""></div>
-          <div class="col">1</div>
-          <div class="col  border rounded"> 30</div>
-          <div class="col ">kg</div>
-          <div class="col  border rounded"> 12</div>
-          <div class="col">Reps</div>
-        </div>
-
-
-
       </div>
     </div>
 
   </div>
+  
 </div>

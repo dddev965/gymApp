@@ -1,0 +1,90 @@
+{
+    "gym": [
+      { "id": 100, 
+      "bodyPart": "Chest", 
+      "des":"some about chest excercse",
+      "Excercise":[
+        {"excerciseName":"bench Press","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+        {"excerciseName":"incline Bench Press","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+        {"excerciseName":"deline bench Press","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+        {"excerciseName":"chest fly","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]}
+        ] },
+        { "id": 2, 
+      "bodyPart": "Shoulder", 
+      "des":"some about chest excercse",
+      "Excercise":[
+        {"excerciseName":"Over-head Press","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+        {"excerciseName":"Front Raises","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+        {"excerciseName":"Side Raises","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+        {"excerciseName":"bentOver Rear Delt Row","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]}
+        ] },
+
+        { "id": 3, 
+        "bodyPart": "Back", 
+        "des":"some about chest excercse",
+        "Excercise":[
+          {"excerciseName":"Lat PullDown","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+          {"excerciseName":"Seated Row","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+          {"excerciseName":"Bent-Over Row","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+          {"excerciseName":"back extension","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+          {"excerciseName":"DeadLift","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]}
+          ] },
+
+          { "id": 4, 
+          "bodyPart": "Biceps", 
+          "des":"some about chest excercse",
+          "Excercise":[
+            {"excerciseName":"Biucep Curl","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+            {"excerciseName":"Preacher Curel","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+            {"excerciseName":"Concentration Curl","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+            {"excerciseName":"incline bicep curl","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]}
+            ] },
+
+            { "id": 5, 
+            "bodyPart": "Abs", 
+            "des":"some about chest excercse",
+            "Excercise":[
+              {"excerciseName":"Situp","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+              {"excerciseName":"Russion Twist","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+              {"excerciseName":"standing Side bend","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+              {"excerciseName":"decline Crunsh","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]}
+              ] },
+              { "id": 6, 
+            "bodyPart": "Legs", 
+            "des":"some about chest excercse",
+            "Excercise":[
+              {"excerciseName":"squat","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+              {"excerciseName":"leg extension","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+              {"excerciseName":"Leg press","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+              {"excerciseName":"sled calf press","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+              {"excerciseName":"lying leg curl ","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]}
+              ] },
+              { "id": 7, 
+              "bodyPart": "Triceps", 
+              "des":"some about chest excercse",
+              "Excercise":[
+                {"excerciseName":"ticeps dip on bench","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+                {"excerciseName":"over head tricpes extension","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+                {"excerciseName":"triceps  kickback","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]}
+                ] },
+                { "id": 8, 
+                "bodyPart": "FormArms", 
+                "des":"some about chest excercse",
+                "Excercise":[
+                  {"excerciseName":"Wrist roller plate","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
+                  {"excerciseName":"Wrist Crul","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]}
+                 
+                  ] }
+
+    ],
+    "excerciseName":[
+      {"id":"1", "excerciseName":"chest"},
+      {"id":"2", "excerciseName":"Shoulder"},
+      {"id":"3", "excerciseName":"Back"},
+      {"id":"4", "excerciseName":"Biceps"},
+      {"id":"5", "excerciseName":"Abs"},
+      {"id":"6", "excerciseName":"Legs"},
+      {"id":"7", "excerciseName":"AbTricepss"},
+      {"id":"8", "excerciseName":"FormArms"}
+    ]
+}
