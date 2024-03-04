@@ -1,4 +1,4 @@
-<div class="container-fluid img"  style="background-image: url({{bgImage}});">
+<div class="container-fluid img"  style="background-image: url({{bgImage}});background-size: 100% 100%;">
   <div class="row d-flex  justify-content-center"  >
     <div class="container border  shadow">
       <p class="bodyPart text-light">{{bodyPart}}</p> 
@@ -11,7 +11,6 @@
         <div class="row">
           <div class=" col-md-4 ">
             <div class="img-div m-2 border">
-              <!-- https://unsplash.com/photos/man-in-black-crew-neck-t-shirt-and-gray-pants-sitting-on-black-and-red-bench-NXMZxygMw8o -->
               <img src="assets/excercise/incline-dumbbell-bench-press.jpg" alt="">
             </div>
           </div>
@@ -28,7 +27,7 @@
             <div class="col">
               <input (change)="onCheckboxChange($event,$index,item.excerciseName)" type="checkbox" name="{{i}}" id="{{i}}">
             </div>
-            <div class="col"> {{$index}} </div>
+            <div class="col"> {{i}} </div>
             <div class="col  border rounded"> 30</div>
             <div class="col ">kg</div>
             <div class="col  border rounded"> {{item.reps[i]}} </div>
