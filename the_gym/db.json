@@ -3,6 +3,7 @@
       { "id": 100, 
       "bodyPart": "Chest", 
       "des":"some about chest excercse",
+     " image":"",
       "Excercise":[
         {"excerciseName":"bench Press","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},
         {"excerciseName":"incline Bench Press","sets":3,"reps":[16,14,12,10],"weight":[10,12.5,15,17.5]},

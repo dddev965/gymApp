@@ -13,47 +13,61 @@ import { NgFor } from '@angular/common';
 })
 export class ExcerciseDesignCardComponent implements OnInit {
 
-  data = 0
-  excerser: Exercise[] = []
+  
+  excerciseReps: any[] = []
+  excercise: Exercise[] = []
+  totolaReps:any[]= []
   id!: any
   excerciseData: any
+  bodyPart?:string
+  bgImage?:string
 
   constructor(private http: DataServiceService, private route: ActivatedRoute) {
-
   }
 
   ngOnInit(): void {
     this.http.getdata().subscribe((res) => {
-      this.excerser = res
-      // console.log(this.excerser);
+      this.excercise = res
       this.route.params.subscribe((params: Params) => {
         this.id = +params['id']
+        const result = this.excercise.find(({ id }) => id == this.id)
+        this.excerciseData = result;
+        this.bgImage = this.excerciseData.image
+        console.log(this.excerciseData);
+        
+        this.bodyPart = result?.bodyPart
 
-        const result = this.excerser.find(({ id }) => id == this.id)
-        console.log(result);
-        this.excerciseData = result
+        // console.log(result?.Excercise);
+        result?.Excercise.forEach((element, index) => {
+          this.excerciseReps.push([])
+          
+          element.reps.forEach(element => {
+            // console.log(element);
+            this.totolaReps.push(element)
+            
+          });
+          
+        });
+        console.log(this.totolaReps.length);
+
       })
+
     })
-
-
-
-
-
   }
 
-
-
-
-
-
-
   // Function to handle checkbox change event
-  onCheckboxChange($event: any) {
-    console.log($event);
-    if ($event.target.checked === true) {
-      this.data = this.data + 1
+  onCheckboxChange($event: any, i: number, excerciseName: string[]) {
+
+    if ($event.target.checked) {
+
+      this.excerciseReps[i].push(i)
+      console.log(this.excerciseReps);
+
     } else {
-      this.data = this.data - 1
+
+      this.excerciseReps[i].pop()
+      console.log(this.excerciseReps);
+
     }
   }
 

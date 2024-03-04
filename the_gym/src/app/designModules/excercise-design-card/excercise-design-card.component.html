@@ -1,31 +1,44 @@
-<div class="container-fluid">
-  <div class="row d-flex  justify-content-center">
+<div class="container-fluid img"  style="background-image: url({{bgImage}});">
+  <div class="row d-flex  justify-content-center"  >
+    <div class="container border  shadow">
+      <p class="bodyPart text-light">{{bodyPart}}</p> 
+      </div>
     <div class=" col-lg-8 col-md-4">
-      <div class="container-fluid border box-div m-3 shadow" *ngFor="let item of excerciseData?.Excercise " >
+
+      
+      @for (item of excerciseData?.Excercise; track $index) {
+      <div class="container-fluid border box-div m-3 shadow">
         <div class="row">
           <div class=" col-md-4 ">
             <div class="img-div m-2 border">
+              <!-- https://unsplash.com/photos/man-in-black-crew-neck-t-shirt-and-gray-pants-sitting-on-black-and-red-bench-NXMZxygMw8o -->
               <img src="assets/excercise/incline-dumbbell-bench-press.jpg" alt="">
             </div>
           </div>
           <div class="col-8 ">
             <div class="name-div border m-2">
-              <p class="fs-5"> {{item.excerciseName}} </p>
-              <span>{{data}}/ {{item.sets}} done </span>
+              <p class="fs-5"> {{item.excerciseName}}  </p>
+              <span>{{excerciseReps[$index].length}} / {{item.reps.length}} done </span>
             </div>
           </div>
         </div>
-        <div class="row my-1 sets  border-bottom text-center p-1" *ngFor="let reps of item.reps;let i=index">
-          <div class="col"><input (change)="onCheckboxChange($event)" type="checkbox" name="" id=""></div>
-          <div class="col"> {{i}} </div>
-          <div class="col  border rounded"> 30</div>
-          <div class="col ">kg</div>
-          <div class="col  border rounded"> 12</div>
-          <div class="col">Reps</div>
-        </div>
+        @for (reps of item.reps; track i; let i = $index ) 
+        {
+          <div class="row my-1 sets  border-bottom text-center p-1">
+            <div class="col">
+              <input (change)="onCheckboxChange($event,$index,item.excerciseName)" type="checkbox" name="{{i}}" id="{{i}}">
+            </div>
+            <div class="col"> {{$index}} </div>
+            <div class="col  border rounded"> 30</div>
+            <div class="col ">kg</div>
+            <div class="col  border rounded"> {{item.reps[i]}} </div>
+            <div class="col">Reps</div>
+          </div>
+        }
       </div>
+      }
     </div>
 
   </div>
-  
+
 </div>

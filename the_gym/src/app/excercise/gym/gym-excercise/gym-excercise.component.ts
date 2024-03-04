@@ -18,7 +18,7 @@ constructor(private http:DataServiceService){
 
 getdata(){
   this.http.getdata().subscribe(res=>{
-    console.log(res);
+    // console.log(res);
     this.data= res
   })
  

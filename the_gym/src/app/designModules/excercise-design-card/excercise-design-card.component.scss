@@ -1,8 +1,24 @@
+*{
+    // color: white;
+    // text-shadow: 2px 2px 8px black;
+}
+.img{
+    // background-image: url('https://images.unsplash.com/photo-1584466977773-e625c37cdd50?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/05/shutterstock_336330470-scaled.jpg?resize=2048%2C1365&ssl=1');
+// box-sizing: cover;
+}
+
+.bodyPart{
+    font-size: 2rem;
+    padding: 2%;
+    height: 80px;
+    max-height: 80px;
+    // min-width: 100px;
+}
 .img-div{
     height: 80px;
     max-height: 80px;
     min-width: 100px;
-
     // border-radius: 100%/;
     text-align: center;
     overflow: hidden;
@@ -23,4 +39,6 @@ text-align: center;
 .box-div{
     // height: 200px;
     overflow: hidden;
+    border-radius: 5px;
+    background-color: #ffffffe8
 }
